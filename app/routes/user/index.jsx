@@ -1,12 +1,12 @@
+import toastStyles from "react-toastify/dist/ReactToastify.css";
+import TableHeader from "../../components/TableHeader";
+import TableRow from "../../components/TableRow";
+
 const { ArrowLeftIcon } = require("@heroicons/react/outline");
 const { json, redirect } = require("@remix-run/node");
 const { Form, Link, useActionData, useCatch, useLoaderData, useSubmit, useTransition } = require("@remix-run/react");
 const { useEffect, useRef } = require("react");
 const { ToastContainer, toast } = require("react-toastify");
-
-import toastStyles from "react-toastify/dist/ReactToastify.css";
-import TableHeader from "../../components/TableHeader";
-import TableRow from "../../components/TableRow";
 
 const  getHouse  = require("../../models/house.server");
 const { getTenantByEmail } = require("../../models/tenant.server");
